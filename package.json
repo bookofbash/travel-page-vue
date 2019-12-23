@@ -47,7 +47,5 @@
     "> 1%",
     "last 2 versions"
   ],
-  "deploy": "node ./node_modules/vue-gh-pages/index.js",
-
-
+  "deploy": "node ./node_modules/vue-gh-pages/index.js"
 }
