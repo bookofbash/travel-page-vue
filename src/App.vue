@@ -13,12 +13,14 @@ import Search from "@/components/Search.vue";
 import Display from "@/components/Display.vue";
 
 
+
 export default {
   name: "home",
   components: {
     Nav,
     Search,
     Display
+    
   }
 };
 </script>

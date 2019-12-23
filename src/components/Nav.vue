@@ -16,7 +16,9 @@
       </div>
     </div>
     <div class="nav login-section">
-      <button class="register"><p>Register</p></button>
+      <button type="button" class="register">
+        <p>Register</p>
+      </button>
       <button class="sign-in"><p>Sign In</p></button>
       <button class="help">
         <img class="icon help-icon" src="../assets/icons/comment.svg" alt="Taxi Icon" />
@@ -26,11 +28,13 @@
 </template>
 
 <script>
+
 export default {
   name: "Nav",
   props: {
     msg: String
-  }
+  },
+
 };
 </script>
 
@@ -135,4 +139,5 @@ export default {
   background-color: #d8d8d8;
   border: none;
 }
+
 </style>
