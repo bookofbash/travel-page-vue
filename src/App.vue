@@ -12,15 +12,12 @@ import Nav from "@/components/Nav.vue";
 import Search from "@/components/Search.vue";
 import Display from "@/components/Display.vue";
 
-
-
 export default {
   name: "home",
   components: {
     Nav,
     Search,
     Display
-    
   }
 };
 </script>
@@ -33,3 +30,5 @@ export default {
   color: #080809;
 }
 </style>
+
+//TODO: Use Font Awesome for SVGs

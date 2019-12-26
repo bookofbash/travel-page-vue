@@ -3,15 +3,21 @@
     <div class="nav logo">Travello</div>
     <div class="nav services-section">
       <div class="accomodations">
-        <span><img class="icon" src="../assets/icons/home.svg" alt="Taxi Icon"/></span>
+        <span>
+          <font-awesome-icon class="icon" icon="home" size="lg" />
+        </span>
         <div class="services-section-text">Accomodations</div>
       </div>
       <div class="car-rentals">
-        <span><img class="icon" src="../assets/icons/car.svg" alt="Taxi Icon"/></span>
+        <span>
+          <font-awesome-icon class="icon" icon="car" size="lg" />
+        </span>
         <div class="services-section-text">Car Rentals</div>
       </div>
-      <div class="airport-taxis">
-        <span><img class="icon" src="../assets/icons/taxi.svg" alt="Taxi Icon"/></span>
+      <div class="airport-taxis ">
+        <span>
+          <font-awesome-icon class="icon" icon="taxi" size="lg" />
+        </span>
         <div class="services-section-text">Airport Taxis</div>
       </div>
     </div>
@@ -21,20 +27,26 @@
       </button>
       <button class="sign-in"><p>Sign In</p></button>
       <button class="help">
-        <img class="icon help-icon" src="../assets/icons/comment.svg" alt="Taxi Icon" />
+        <font-awesome-icon icon="comment" size="lg" />
       </button>
     </div>
   </div>
 </template>
 
 <script>
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faHome, faCar, faTaxi, faComment } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faHome);
+library.add(faCar);
+library.add(faTaxi);
+library.add(faComment);
 
 export default {
   name: "Nav",
   props: {
     msg: String
-  },
-
+  }
 };
 </script>
 
@@ -126,6 +138,7 @@ export default {
   width: 17.5px;
   margin-right: 5px;
   vertical-align: middle;
+  padding-top: 2px;
 }
 .help-icon {
   margin-right: none;
@@ -139,5 +152,4 @@ export default {
   background-color: #d8d8d8;
   border: none;
 }
-
 </style>
