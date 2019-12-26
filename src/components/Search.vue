@@ -44,6 +44,8 @@
 </template>
 <script>
 import DatePicker from "@/components/DatePicker.vue";
+import "vue2-datepicker/index.css";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faChild, faUser, faBed, faCalendar, faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -123,12 +125,7 @@ export default {
 }
 .date-range {
   display: flex;
-}
-.filter-purple {
-  filter: invert(26%) sepia(89%) saturate(1674%) hue-rotate(272deg) brightness(90%) contrast(94%);
-}
-
-.mx-input input {
-  font-size: 12px;
+  height: 16px;
+  width: auto;
 }
 </style>

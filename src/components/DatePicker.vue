@@ -3,10 +3,13 @@
     <date-picker
       v-model="range"
       lang="en"
+      width="900"
       range
       type="date"
       format="MM-DD-YYYY"
-      width="500"
+      input-class="calendar-input"
+      calendar-class="calendar-input"
+      class="options date-range"
     ></date-picker>
   </div>
 </template>
@@ -29,16 +32,11 @@ export default {
 </script>
 
 <style scoped>
-i .mx-icon-calendar svg {
-  display: none;
+.calendar-input {
+  width: inherit !important;
+  height: 330px;
 }
-.mx-input {
-  width: inherit;
-}
-.mx-input-wrapper {
-  height: 12px;
-}
-.mx-datepicker {
-  height: 12px;
+.options .date-range {
+  width: 180px;
 }
 </style>
