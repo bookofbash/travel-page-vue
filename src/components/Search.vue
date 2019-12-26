@@ -2,33 +2,60 @@
   <div class="container">
     <div class="searchbar">
       <span class="icon-container"
-        ><img class="icon search" src="../assets/icons/search.svg" alt="Search Icon"
+        ><font-awesome-icon class="icon" icon="search" size="m" :style="{ color: '#825DBB' }"
       /></span>
       <input class="search-field" placeholder="Bali, Canggu, Kabupaten Badung" />
     </div>
     <div class="search-options">
-      
-      <div class="options date-range"><span><img class="icon filter-purple" src="../assets/icons/calendar.svg" alt="calendar Icon"
-      /></span>
+      <div class="options date-range">
+        <span
+          ><font-awesome-icon class="icon" icon="calendar" size="m" :style="{ color: '#825DBB' }"
+        /></span>
         <DatePicker />
         <span class="select-arrow"> &#9660;</span>
       </div>
-      <div class="options search-rooms"><span><img class="icon filter-purple" src="../assets/icons/bed.svg" alt="Bed Icon"
-      /></span>Rooms - 1 <span class="select-arrow" >&#9660;</span></div>
-      <div class="options search-adults"><span><img class="icon filter-purple" src="../assets/icons/user.svg" alt="User Icon"
-      /></span>Adults - 1<span class="select-arrow">&#9660;</span></div>
-      <div class="options search-children"><span><img class="icon filter-purple" src="../assets/icons/child.svg" alt="Child Icon"
-      /></span>Children - 0 <span class="select-arrow">&#9660;</span></div>
+      <div class="options search-rooms">
+        <span
+          ><font-awesome-icon class="icon" icon="bed" size="m" :style="{ color: '#825DBB' }"/></span
+        >Rooms - 1
+        <span class="select-arrow">&#9660;</span>
+      </div>
+      <div class="options search-adults">
+        <span
+          ><font-awesome-icon
+            class="icon"
+            icon="user"
+            size="m"
+            :style="{ color: '#825DBB' }"/></span
+        >Adults - 1<span class="select-arrow">&#9660;</span>
+      </div>
+      <div class="options search-children">
+        <span
+          ><font-awesome-icon
+            class="icon"
+            icon="child"
+            size="m"
+            :style="{ color: '#825DBB' }"/></span
+        >Children - 0
+        <span class="select-arrow">&#9660;</span>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import DatePicker from '@/components/DatePicker.vue'
+import DatePicker from "@/components/DatePicker.vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faChild, faUser, faBed, faCalendar, faSearch } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faChild);
+library.add(faUser);
+library.add(faBed);
+library.add(faCalendar);
+library.add(faSearch);
 
 export default {
   components: {
     DatePicker
-    
   }
 };
 </script>
@@ -47,7 +74,7 @@ export default {
   margin: auto;
 }
 .searchbar input {
-width: 500px
+  width: 500px;
 }
 .icon {
   width: 10px;
@@ -59,7 +86,6 @@ width: 500px
   border: solid rgb(128, 127, 127) 1px;
   border-radius: 50%;
   padding: 10px;
-
 }
 
 .search-field {
@@ -88,23 +114,21 @@ width: 500px
   align-items: center;
   margin-top: 25px;
 }
-.options{
+.options {
   border-radius: 25px;
   border: 1px solid silver;
   font-size: 12px;
   padding: 10px;
   margin-right: 10px;
 }
-.date-range{
+.date-range {
   display: flex;
 }
 .filter-purple {
   filter: invert(26%) sepia(89%) saturate(1674%) hue-rotate(272deg) brightness(90%) contrast(94%);
 }
 
-.mx-input input{
-    font-size: 12px;
+.mx-input input {
+  font-size: 12px;
 }
-
-
 </style>
