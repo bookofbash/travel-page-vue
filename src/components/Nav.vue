@@ -4,19 +4,19 @@
     <div class="nav services-section">
       <div class="accomodations">
         <span>
-          <font-awesome-icon class="icon" icon="home" size="lg" />
+          <font-awesome-icon class="icon" icon="home" size="lg" :style="{ color: '#E3E3E3' }" />
         </span>
         <div class="services-section-text">Accomodations</div>
       </div>
       <div class="car-rentals">
         <span>
-          <font-awesome-icon class="icon" icon="car" size="lg" />
+          <font-awesome-icon class="icon" icon="car" size="lg" :style="{ color: '#E3E3E3' }" />
         </span>
         <div class="services-section-text">Car Rentals</div>
       </div>
       <div class="airport-taxis ">
         <span>
-          <font-awesome-icon class="icon" icon="taxi" size="lg" />
+          <font-awesome-icon class="icon" icon="taxi" size="lg" :style="{ color: '#E3E3E3' }" />
         </span>
         <div class="services-section-text">Airport Taxis</div>
       </div>
@@ -32,7 +32,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faHome, faCar, faTaxi, faComment } from "@fortawesome/free-solid-svg-icons";
