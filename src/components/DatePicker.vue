@@ -9,8 +9,10 @@
       format="MM-DD-YYYY"
       input-class="calendar-input"
       calendar-class="calendar-input"
-      class="options date-range"
-    ></date-picker>
+      class="options date-range "
+      v-bind:clearable="false"
+    >
+    </date-picker>
   </div>
 </template>
 
@@ -32,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.calendar-input {
+input .calendar-input {
   width: inherit !important;
   height: 330px;
 }

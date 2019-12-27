@@ -31,4 +31,4 @@ export default {
 }
 </style>
 
-//TODO: Use Font Awesome for SVGs
+//TODO: Add lazy-loading

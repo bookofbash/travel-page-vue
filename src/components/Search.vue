@@ -16,27 +16,52 @@
       </div>
       <div class="options search-rooms">
         <span
-          ><font-awesome-icon class="icon" icon="bed" size="m" :style="{ color: '#825DBB' }"/></span
-        >Rooms - 1
+          ><font-awesome-icon class="icon" icon="bed" size="m" :style="{ color: '#825DBB' }"
+        /></span>
+        <div class="select-style">
+          <select
+            ><option value="Rooms - 1">Rooms - 1</option>
+            <option value="Rooms - 2">Rooms - 2</option>
+            <option value="Rooms - 3">Rooms - 3</option>
+            <option value="Rooms - 4">Rooms - 4</option>
+          </select>
+        </div>
         <span class="select-arrow">&#9660;</span>
       </div>
       <div class="options search-adults">
         <span
-          ><font-awesome-icon
-            class="icon"
-            icon="user"
-            size="m"
-            :style="{ color: '#825DBB' }"/></span
-        >Adults - 1<span class="select-arrow">&#9660;</span>
+          ><font-awesome-icon class="icon" icon="user" size="m" :style="{ color: '#825DBB' }"
+        /></span>
+        <div class="select-style">
+          <select
+            ><option value="Adults - 1">Adults - 1</option>
+            <option value="Adults - 2">Adults - 2</option>
+            <option value="Adults - 3">Adults - 3</option>
+            <option value="Adults - 4">Adults - 4</option>
+            <option value="Adults - 5">Adults - 5</option>
+            <option value="Adults - 6">Adults - 6</option>
+            <option value="Adults - 7">Adults - 7</option>
+            <option value="Adults - 8">Adults - 8</option>
+            <option value="Adults - 9">Adults - 9</option>
+            <option value="Adults - 10">Adults - 10</option>
+            <option value="Adults - 11">Adults - 11</option>
+            <option value="Adults - 12">Adults - 12</option></select
+          >
+        </div>
+        <span class="select-arrow">&#9660;</span>
       </div>
       <div class="options search-children">
         <span
-          ><font-awesome-icon
-            class="icon"
-            icon="child"
-            size="m"
-            :style="{ color: '#825DBB' }"/></span
-        >Children - 0
+          ><font-awesome-icon class="icon" icon="child" size="m" :style="{ color: '#825DBB' }"
+        /></span>
+        <div class="select-style">
+          <select
+            ><option value="Children - 1">Children - 1</option>
+            <option value="Children - 2">Children - 2</option>
+            <option value="Children - 3">Children - 3</option>
+            <option value="Children - 4">Children - 4</option>
+          </select>
+        </div>
         <span class="select-arrow">&#9660;</span>
       </div>
     </div>
@@ -105,6 +130,26 @@ export default {
   width: auto;
 }
 .search-children {
+  width: auto;
+}
+.select-style {
+  display: inline-flex;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+}
+.select-style select {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  width: inherit;
+  font-size: 12px;
+  -webkit-appearance: none;
+}
+.select-style option {
+  height: auto;
   width: auto;
 }
 .select-arrow {
