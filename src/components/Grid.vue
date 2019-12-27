@@ -43,8 +43,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?bali,townhouse" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?bali,townhouse" />
       </div>
       <div class="card-data">
         <div class="data-container">
@@ -57,8 +57,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?bali,mansion" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?bali,mansion" />
       </div>
       <div class="card-data">
         <div class="data-container">
@@ -71,8 +71,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?bedroom, trees" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?bedroom, trees" />
       </div>
       <div class="card-data">
         <div class="data-container">
@@ -85,8 +85,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?bedroom, ocean" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?bedroom, ocean" />
       </div>
       <div class="card-data">
         <div class="data-container">
@@ -99,8 +99,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?livingroom, tropical" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?livingroom, tropical" />
       </div>
       <div class="card-data">
         <div class="data-container">
@@ -113,8 +113,8 @@
       </div>
     </div>
     <div class="card">
-      <div class="card-image">
-        <img src="https://source.unsplash.com/200x140/?bali,livingroom, light" />
+      <div class="card-image" v-lazy-container="{ selector: 'img' }">
+        <img data-src="https://source.unsplash.com/200x140/?bali,livingroom, light" />
       </div>
       <div class="card-data">
         <div class="data-container">

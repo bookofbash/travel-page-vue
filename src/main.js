@@ -8,6 +8,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
+import VueLazyload from "vue-lazyload";
+
 library.add(faHome);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -18,6 +20,8 @@ Vue.use(VueGoogleMaps, {
     libraries: "places" // necessary for places input
   }
 });
+
+Vue.use(VueLazyload);
 
 Vue.config.productionTip = false;
 
