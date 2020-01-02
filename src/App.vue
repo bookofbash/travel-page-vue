@@ -6,6 +6,7 @@
     <SignIn name="hello-world">
       hello, world!
     </SignIn>
+    <Footer />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Nav from "@/components/Nav.vue";
 import Search from "@/components/Search.vue";
 import Display from "@/components/Display.vue";
 import SignIn from "@/components/SignIn.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home",
@@ -22,7 +24,8 @@ export default {
     Nav,
     Search,
     Display,
-    SignIn
+    SignIn,
+    Footer
   }
 };
 </script>
