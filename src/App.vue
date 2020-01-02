@@ -3,6 +3,9 @@
     <Nav />
     <Search />
     <Display />
+    <SignIn name="hello-world">
+      hello, world!
+    </SignIn>
   </div>
 </template>
 
@@ -11,13 +14,15 @@
 import Nav from "@/components/Nav.vue";
 import Search from "@/components/Search.vue";
 import Display from "@/components/Display.vue";
+import SignIn from "@/components/SignIn.vue";
 
 export default {
   name: "home",
   components: {
     Nav,
     Search,
-    Display
+    Display,
+    SignIn
   }
 };
 </script>
@@ -31,4 +36,4 @@ export default {
 }
 </style>
 
-//TODO: Add lazy-loading
+//TODO: create sign in modal

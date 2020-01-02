@@ -22,14 +22,36 @@
       </div>
     </div>
     <div class="nav login-section">
-      <button type="button" class="register">
+      <button type="button" class="register" @click="showRegister()">
         <p>Register</p>
       </button>
-      <button class="sign-in"><p>Sign In</p></button>
+      <button class="sign-in" @click="showLogin()"><p>Sign In</p></button>
       <button class="help">
         <font-awesome-icon icon="comment" size="lg" />
       </button>
     </div>
+    <modal name="login" :width="300" :height="230">
+      <div class="register-container">
+        <h1>Welcome Back</h1>
+        <form class="register-form">
+          <input type="text" placeholder="Enter Email" name="email" required />
+          <input type="password" placeholder="Enter Password" name="psw" required />
+          <button type="submit" class="SignInBtn">Sign In</button>
+        </form>
+      </div>
+    </modal>
+    <modal name="register" :width="300">
+      <div class="register-container">
+        <h1>Registeration Form</h1>
+        <form class="register-form">
+          <input type="text" placeholder="Enter Email" name="email" required />
+          <input type="password" placeholder="Enter Password" name="psw" required />
+          <input type="password" placeholder="Repeat Password" name="psw" required />
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Register</button>
+        </form>
+      </div>
+    </modal>
   </div>
 </template>
 <script>
@@ -40,11 +62,21 @@ library.add(faHome);
 library.add(faCar);
 library.add(faTaxi);
 library.add(faComment);
-
 export default {
   name: "Nav",
   props: {
     msg: String
+  },
+  methods: {
+    showLogin() {
+      this.$modal.show("login");
+    },
+    showRegister() {
+      this.$modal.show("register");
+    },
+    hide() {
+      this.$modal.hide("hello-world");
+    }
   }
 };
 </script>
@@ -150,5 +182,51 @@ export default {
   width: 40px;
   background-color: #d8d8d8;
   border: none;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fee;
+}
+.register-form p {
+  margin-top: 0;
+  font-size: 10px;
+}
+.register-container {
+  background-color: #fee;
+}
+.register-container input {
+  height: 24px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.register-container h1 {
+  font-size: 22px;
+  background: #9b1d07;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 0;
+}
+.registerbtn {
+  width: 140px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #ff3511;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.SignInBtn {
+  width: 140px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #ff3511;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 </style>

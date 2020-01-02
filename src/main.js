@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 import VueLazyload from "vue-lazyload";
 
+import VModal from "vue-js-modal";
+
 library.add(faHome);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
@@ -22,6 +24,8 @@ Vue.use(VueGoogleMaps, {
 });
 
 Vue.use(VueLazyload);
+
+Vue.use(VModal);
 
 Vue.config.productionTip = false;
 
