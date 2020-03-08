@@ -42,7 +42,7 @@
     </modal>
     <modal name="register" :width="300">
       <div class="register-container">
-        <h1>Registeration Form</h1>
+        <h1>Sign Up</h1>
         <form class="register-form">
           <input type="text" placeholder="Enter Email" name="email" required />
           <input type="password" placeholder="Enter Password" name="psw" required />
@@ -188,14 +188,17 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fee;
+  background-color: #fff;
 }
 .register-form p {
   margin-top: 0;
   font-size: 10px;
 }
+.register-form input {
+  border: none;
+}
 .register-container {
-  background-color: #fee;
+  background-color: #fff;
 }
 .register-container input {
   height: 24px;
@@ -206,8 +209,8 @@ export default {
 }
 .register-container h1 {
   font-size: 22px;
-  background: #9b1d07;
-  color: white;
+  background: #fff;
+  color: #ff3511;
   width: 100%;
   text-align: center;
   padding: 20px 0px;
@@ -217,6 +220,7 @@ export default {
   width: 140px;
   font-size: 20px;
   border-radius: 5px;
+  border: none;
   background-color: #ff3511;
   color: #ffffff;
   margin-bottom: 20px;
@@ -225,6 +229,7 @@ export default {
   width: 140px;
   font-size: 20px;
   border-radius: 5px;
+  border: none;
   background-color: #ff3511;
   color: #ffffff;
   margin-bottom: 20px;
